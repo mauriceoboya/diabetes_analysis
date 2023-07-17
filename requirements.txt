@@ -10,6 +10,7 @@ dj-database-url==2.0.0
 Django==4.2.3
 executing==1.2.0
 fonttools==4.41.0
+gunicorn==20.1.0
 ipykernel==6.24.0
 ipython==8.14.0
 jedi==0.18.2
