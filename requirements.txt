@@ -1,3 +1,4 @@
+pip == 23.2
 asgiref==3.7.2
 asttokens==2.2.1
 backcall==0.2.0
