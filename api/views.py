@@ -5,6 +5,7 @@ from .forms import DiabetesSerializer
 import joblib
 # Create your views here.
 def home(request):
+    pred=None
     diabetes=Diabetes.objects.all()
     model=joblib.load('api/logistic_model.joblib')
     if request.method=='POST':
