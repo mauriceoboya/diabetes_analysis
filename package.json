@@ -5,6 +5,8 @@
   "scripts": {
     "tailwind-watch": "tailwindcss -i ./src/input.css -o ./static/output.css --watch",
     "tailwind-build": "tailwindcss -i ./src/input.css -o ./static/output.css --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.4"
   }
-
 }

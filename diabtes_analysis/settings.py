@@ -40,7 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api',
+    'rest_framework',
+    "crispy_forms",                   
+    "crispy_tailwind",
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+
+CRISPY_TEMPLATE_PACK = "tailwind"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -79,13 +86,19 @@ WSGI_APPLICATION = 'diabtes_analysis.wsgi.application'
 DATABASES = {
     'default':dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
-#DATABASE={
-#    'default': {
-#             'ENGINE':'django.db.backend.sqlite3',
-#             'NAME':BASE_DIR/'db.sqlite3'
-#    }
-    
-#}
+#DATABASES = {  
+#    'default': {  
+#        'ENGINE': 'django.db.backends.mysql',  
+#        'NAME': 'diabetes_data',  
+#        'USER': 'root',  
+#        'PASSWORD':'',  
+#        'HOST': '127.0.0.1',  
+#        'PORT': '3306',  
+#        'OPTIONS': {  
+#            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+#        }  
+#    }  
+#} 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
