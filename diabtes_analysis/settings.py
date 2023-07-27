@@ -41,13 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api',
     'rest_framework',
-    "crispy_forms",                   
-    "crispy_tailwind",
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
-
-CRISPY_TEMPLATE_PACK = "tailwind"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -92,12 +90,12 @@ DATABASES = {
 #        'NAME': 'diabetes_data',  
 #        'USER': 'root',  
 #        'PASSWORD':'',  
-#        'HOST': '127.0.0.1',  
-#        'PORT': '3306',  
-#        'OPTIONS': {  
-#            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
-#        }  
-#    }  
+##        'HOST': '127.0.0.1',  
+ #       'PORT': '3306',  
+ ##       'OPTIONS': {  
+  #          'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+  #      }  
+  #  }  
 #} 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
