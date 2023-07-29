@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render ,redirect
 from .models import Diabetes
 from .forms import DiabetesSerializer
 #from . import logistic_model
@@ -7,7 +7,7 @@ import joblib
 def home(request):
     pred=None
     diabetes=Diabetes.objects.all()
-    model=joblib.load('api/logistic_model.joblib')
+    model=joblib.load('svm_model.joblib')
     if request.method=='POST':
         form=DiabetesSerializer(request.POST)
         if form.is_valid():
@@ -24,7 +24,8 @@ def home(request):
             single_prediction = [int(value) if value.isdigit() else float(value) for value in field_list]
             single_input=[single_prediction]
             pred=model.predict(single_input)
-
+            return redirect('/details')
+        
 
     else:
         form=DiabetesSerializer()
@@ -36,3 +37,6 @@ def home(request):
         'pred':pred
     }
     return render(request,'app/index.html',context)
+
+def details(request):
+    return render(request,'app/details.html')
