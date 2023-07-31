@@ -11,3 +11,6 @@ This is a Django web application that demonstrates the use of Support Vector Mac
 - SVM model training and classification
 - Visualization of classification results
 - Model evaluation metrics display (accuracy, precision, recall, F1-score)
+
+## Installation
+ Clone the repository:  https://github.com/mauriceoboya/django_analysis.git
