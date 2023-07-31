@@ -13,4 +13,10 @@ This is a Django web application that demonstrates the use of Support Vector Mac
 - Model evaluation metrics display (accuracy, precision, recall, F1-score)
 
 ## Installation
- Clone the repository:  https://github.com/mauriceoboya/django_analysis.git
+ 1. Clone the repository:  https://github.com/mauriceoboya/django_analysis.git 
+ 2. Navigate to the project directory: cd diabetes_analysis 
+ 3. Create a virtual environment : python -m venv venv
+                                   source venv/bin/activate # On Windows, use 'venv\Scripts\activate'
+
+
+
