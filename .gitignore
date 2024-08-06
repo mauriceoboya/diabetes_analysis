@@ -1,0 +1,4 @@
+# Ignore lib and lib64 directories
+lib/
+lib64/
+
